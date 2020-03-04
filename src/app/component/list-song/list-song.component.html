@@ -1,0 +1,7 @@
+<p>list-song works!</p>
+<div *ngFor="let song of songs">
+  <p>id : {{song.id}}</p>
+  <p>name: {{song.nameSong}}</p>
+  <a [routerLink]="['/detail-song', song.id]">Hello</a>
+  <a [routerLink]="['/edit-song', song.id]">Bye</a>
+</div>

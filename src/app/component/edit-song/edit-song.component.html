@@ -1,0 +1,6 @@
+<p>edit-song works!</p>
+<form [formGroup]="editSongForm" (ngSubmit)="editSong()">
+  <input type="text" formControlName="name" value="{{song.nameSong}}">
+  <input type="text" formControlName="description" value="{{song.description}}">
+  <input type="submit" value="sua bai hat">
+</form>
